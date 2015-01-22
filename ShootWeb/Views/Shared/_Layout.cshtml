@@ -31,17 +31,11 @@
                 <div>MENU</div>
                 <select onchange="location=this.value">
                     <option></option>
-                    <option value="index.html">首页</option>
-                    <option value="products.html">公司动态</option>
+                    <option value="/home/index.html">首页</option>
+                    <option value="/news/index.html">公司动态</option>
                     <option value="/services/index.html">服务项目</option>
-                    <option value="#">--- Maecenas faucibus</option>
-                    <option value="#">--- Fusce tincidunt</option>
-                    <option value="#">--- Tempor eros</option>
-                    <option value="#">--- --- Ut viverra</option>
-                    <option value="#">--- --- Hendrerit mauris</option>
-                    <option value="#">--- Mauris ut du</option>
-                    <option value="pricing.html">作品展示</option>
-                    <option value="contacts.html">关于我们</option>
+                    <option value="/works/index.html">作品展示</option>
+                    <option value="/about/index.html">关于我们</option>
                 </select>
             </div>
             <div class="inner">
@@ -53,7 +47,7 @@
                         <li>
                             <a href="/services/index.html">服务项目</a>
                         </li>
-                        <li><a href="pricing.html">作品展示</a></li>
+                        <li><a href="/works/index.html">作品展示</a></li>
                         <li><a href="/about/index.html">关于我们</a></li>
                     </ul>
                 </nav>
@@ -61,7 +55,6 @@
             </div>
             @RenderSection("slider", false)
         </header>
-        <div class="copyrights">Collect from <a href="http://www.cssmoban.com/">Website Template</a></div>
         <section id="content">
             @RenderBody()
         </section>
@@ -74,7 +67,7 @@
                         <div class="col-1-3">
                             <div class="wrap-col">
                                 <div class="copyright">
-                                    &copy; 2012 <strong class="footer-logo">AgroPlus</strong>
+                                    &copy; 2015 <strong class="footer-logo">拾光影视</strong>
                                     <div>
                                         <a rel="nofollow" href="http://www.templatemonster.com">Website Template</a> by TemplateMonster.com
 									<a rel="nofollow" href="http://www.cssmoban.com/">Responsive Themes</a> by Zerotheme.com

@@ -99,6 +99,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Controllers\ServicesController.cs" />
+    <Compile Include="Controllers\WorksController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -114,6 +115,16 @@
     <Content Include="css\style.css" />
     <Content Include="css\zerogrid.css" />
     <Content Include="Global.asax" />
+    <Content Include="images\kh\kh-img1.jpg" />
+    <Content Include="images\kh\kh-img10.jpg" />
+    <Content Include="images\kh\kh-img2.jpg" />
+    <Content Include="images\kh\kh-img3.jpg" />
+    <Content Include="images\kh\kh-img4.jpg" />
+    <Content Include="images\kh\kh-img5.jpg" />
+    <Content Include="images\kh\kh-img6.jpg" />
+    <Content Include="images\kh\kh-img7.jpg" />
+    <Content Include="images\kh\kh-img8.jpg" />
+    <Content Include="images\kh\kh-img9.jpg" />
     <Content Include="images\slide-3.jpg" />
     <Content Include="js\PIE.php" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
@@ -197,6 +208,7 @@
     <Content Include="Views\Services\Index.cshtml" />
     <Content Include="Views\About\Index.cshtml" />
     <Content Include="Views\News\Index.cshtml" />
+    <Content Include="Views\Works\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
