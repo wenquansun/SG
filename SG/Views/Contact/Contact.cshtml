@@ -1,0 +1,95 @@
+﻿@{
+    ViewBag.Title = "联系我们";
+}
+@section head{
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=rP3DKGlxbmXSp53yGHhZGWH5"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            //map
+            // 百度地图API功能
+
+            // 百度地图API功能
+            var sContent =
+            "<h4 style='margin:0 0 5px 0;padding:0.2em 0'>拾光公司</h4>" +
+            "<img style='float:right;margin:4px' id='imgDemo' src='http://app.baidu.com/map/images/tiananmen.jpg' width='139' height='104' title='天安门'/>" +
+            "<p style='margin:0;line-height:1.5;font-size:13px;text-indent:2em'>拾光公司拾光公司拾光公司拾光公司拾光公司拾光公司拾光公司拾光公司拾光公司拾光公司...</p>" +
+            "</div>";
+            var map = new BMap.Map("baidumap");            // 创建Map实例
+            var point = new BMap.Point(111.308065, 30.697767);    // 创建点坐标
+            var marker = new BMap.Marker(point);
+            var infoWindow = new BMap.InfoWindow(sContent);  // 创建信息窗口对象
+            map.centerAndZoom(point, 15);
+            map.addOverlay(marker);
+            marker.addEventListener("click", function () {
+                this.openInfoWindow(infoWindow);
+                //图片加载完毕重绘infowindow
+                document.getElementById('imgDemo').onload = function () {
+                    infoWindow.redraw();   //防止在网速较慢，图片未加载时，生成的信息框高度比图片的总高度小，导致图片部分被隐藏
+                }
+            });
+            map.enableScrollWheelZoom();
+            //Menu
+            jQuery("ul.sf-menu").supersubs({
+                minWidth: 12,		// requires em unit.
+                maxWidth: 27,		// requires em unit.
+                extraWidth: 3	// extra width can ensure lines don't sometimes turn over due to slight browser differences in how they round-off values
+                // due to slight rounding differences and font-family
+            }).superfish();  // call supersubs first, then superfish, so that subs are
+            // not display:none when measuring. Call before initialising
+            // containing tabs for same reason.
+
+        });
+    </script>
+}
+<!--page_container-->
+<div class="page_container">
+    <div class="breadcrumb">
+        <div class="wrap">
+            <div class="container">
+                <a href="index.html">Home</a><span>/</span>Contacts
+            </div>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="container">
+            <section>
+                <div class="row">
+                    <div class="span4">
+                        <h2 class="title"><span>Contact Info</span></h2>
+                        <div id="map">
+                            <div id="baidumap" style="width: 100%; height: 310px"></div>
+                        </div>
+                        <p>
+                            宜昌市东山大道148号<br />自由空间1111室（北山坡十四中旁）
+                        </p>
+                        <p>
+                            电话: 0717-6282516 15072500557 15671061159<br />
+                            QQ: 1826151772<br />
+                            @*Email: <a href="mailto:#">info@yoursitename.com</a><br />*@
+                            网站:<a target="_blank" href="http://www.ycshiguang.com" class="colortext">&nbsp;&nbsp;www.ycshiguang.com</a>
+                        </p>
+                    </div>
+                    <div class="span8">
+                        <h2 class="title"><span>Get In Touch</span></h2>
+                        <div class="contact_form">
+                            <div id="note"></div>
+                            <div id="fields">
+                                <form id="ajax-contact-form" action="">
+                                    <input class="span7" type="text" name="name" value="" placeholder="Name (required)" />
+                                    <input class="span7" type="text" name="email" value="" placeholder="Email (required)" />
+                                    <input class="span7" type="text" name="subject" value="" placeholder="Subject" />
+                                    <textarea name="message" id="message" class="span8" placeholder="Message"></textarea>
+                                    <div class="clear"></div>
+                                    <input type="reset" class="btn dark_btn" value="Clear form" />
+                                    <input type="submit" class="btn send_btn" value="Submit" />
+                                    <div class="clear"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<!--//page_container-->

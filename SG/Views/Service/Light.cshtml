@@ -1,0 +1,115 @@
+﻿@{
+    ViewBag.Title = "灯光音响";
+}
+@section head{
+
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script type="text/javascript" src="/js/jquery.mousewheel-3.0.6.pack.js"></script>
+
+    <!-- Add fancyBox main JS and CSS files -->
+    <script type="text/javascript" src="/source/jquery.fancybox.js?v=2.1.4"></script>
+    <link rel="stylesheet" type="text/css" href="/source/jquery.fancybox.css?v=2.1.4" media="screen" />
+
+
+    <!-- Add Thumbnail helper (this is optional) -->
+    <link rel="stylesheet" type="text/css" href="/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+    <script type="text/javascript" src="/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            $('.fancybox-thumbs').fancybox({
+                prevEffect: 'none',
+                nextEffect: 'none',
+                closeBtn: true,
+                arrows: true,
+                nextClick: false,
+                helpers: {
+                    thumbs: {
+                        width: 50,
+                        height: 50
+                    },
+                    title: {
+                        type: 'inside'
+                    },
+                    overlay: {
+                        css: {
+                            'background': 'rgba(238,238,238,0.85)'
+                        }
+                    }
+                },
+                wrapCSS: 'fancybox-custom',
+                closeClick: true,
+                openEffect: 'none',
+
+            });
+        });
+    </script>
+}
+
+<!--page_container-->
+<div class="page_container">
+    <div class="breadcrumb">
+        <div class="wrap">
+            <div class="container">
+                <span>婚礼服务/</span>鲜花车队
+            </div>
+        </div>
+    </div>
+    <!--MAIN CONTENT AREA-->
+    <div class="wrap">
+        <div class="container inner_content">
+            <section>
+                <h2 class="title"><span>Tips</span></h2>
+                <p style="text-indent: 2em;">
+                    舞台灯光也叫“舞台照明”，简称“灯光”。舞台美术造型手段之一。运用舞台灯光设备（如照明灯具、幻灯、控制系统等）和技术手段，随着剧情的发展，以光色及其变化显示环境、渲染气氛、突出中心人物，创造舞台空间感、时间感，塑造舞台演出的外部形象，并提供必要的灯光效果.
+
+常用灯具及特点<br />
+                    1、聚光灯：是舞台照明上使用最广泛的主要灯种之一，它照射光线集中，光斑轮廓边沿较为清晰，能突出一个局部，也可放大光斑照明一个区域，作为舞台主要光源，常用于面光、耳光、侧光等光位。<br />
+                    2、柔光灯：光线柔和匀称，既能突出某一部分，又没有生硬的光斑，便于几个灯相衔接，多用于柱光、流动光等近距离光位。<br />
+                    3、回光灯：它是一种反射式的灯具，其特点是光质硬、照度高和射程远，是一种既经济、又高效的强光灯。<br />
+                    4、散光灯：光线漫散、均称、投射面积大，分为天排散光和地排散光，多用于天幕照射，也可用于剧场主席台的普遍照明。<br />
+                    5、造型灯：原理介于追光灯和聚光灯之间，是一种特殊灯具，主要用于人物和景物的造型投射。<br />
+                    6、脚光灯（又称条灯）：光线柔和，面积广泛。主要作为向中景、网景布光、布色，也可在台口位置辅助面光照明。<br />
+                    7、光柱灯（又称筒灯）：目前使用比较广泛，可用于人物和景物各方位照明，也可直接安装于舞台上，暴露于观众，形成灯阵，作舞台装饰和照明双重作用。<br />
+                    8、投景幻灯（又称投影幻灯）及天幕效果灯：可在舞台天幕上形成整体画面，及各种特殊效果，如：风、雨、雷、电、水、火、烟、云等。<br />
+                    9、电脑灯：常安装在面光、顶光、舞台后台阶等位置，其运行中的色、形、图等均可编制运行程序。由于功率大小不同，在舞台上使用要有所区别。一般小功率电脑灯，只适合舞厅使用。在舞台上小功率电脑灯光线、光斑常被舞台聚光灯、回光灯等谈化掉，所以在选用上要特别留意。<br />
+                    10、追光灯：是舞台灯光的灯具，特点是亮度高、运用透镜成像，可呈现清晰光斑，通过调节焦距，又可改变光斑虚实。有活动光栏，可以方便的改换色彩，灯体可以自由运转等。
+                </p>
+            </section>
+            <br />
+            <div class="row">
+                <!-- portfolio_block -->
+                <div class="projects">
+                    <div class="span3 element category01" data-category="category01">
+                        <div class="hover_img">
+                            <a class="fancybox-thumbs" style="" data-fancybox-group="thumb" href="/img/dgyx/dg1_b.jpg" title="">
+                                <img src="/img/dgyx/dg1_b.jpg" alt="" /></a>
+
+                        </div>
+                    </div>
+                    <div class="span3 element category02" data-category="category02">
+                        <div class="hover_img">
+                            <a class="fancybox-thumbs" style="" data-fancybox-group="thumb" href="/img/dgyx/dg2_b.jpg" title="">
+                                <img src="/img/dgyx/dg2_b.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="span3 element category03" data-category="category03">
+                        <div class="hover_img">
+                            <a class="fancybox-thumbs" style="" data-fancybox-group="thumb" href="/img/dgyx/yx1_b.jpg" title="">
+                                <img src="/img/dgyx/yx1_b.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="span3 element category01" data-category="category01">
+                        <div class="hover_img">
+                            <a class="fancybox-thumbs" style="" data-fancybox-group="thumb" href="/img/dgyx/yx1_b.jpg" title="">
+                                <img src="/img/dgyx/yx2_b.jpg" alt="" /></a>
+                            <span class="shadowimg220"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//MAIN CONTENT AREA-->
+
+</div>
+<!--//page_container-->

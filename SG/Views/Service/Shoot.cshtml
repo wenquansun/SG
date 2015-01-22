@@ -1,0 +1,120 @@
+﻿@{
+    ViewBag.Title = "摄影摄像";
+}
+@section head{
+
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script type="text/javascript" src="/js/jquery.mousewheel-3.0.6.pack.js"></script>
+
+    <!-- Add fancyBox main JS and CSS files -->
+    <script type="text/javascript" src="/source/jquery.fancybox.js?v=2.1.4"></script>
+    <link rel="stylesheet" type="text/css" href="/source/jquery.fancybox.css?v=2.1.4" media="screen" />
+
+
+    <!-- Add Thumbnail helper (this is optional) -->
+    <link rel="stylesheet" type="text/css" href="/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+    <script type="text/javascript" src="/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            $('.fancybox-thumbs').fancybox({
+                prevEffect: 'none',
+                nextEffect: 'none',
+                closeBtn: true,
+                arrows: true,
+                nextClick: false,
+                helpers: {
+                    thumbs: {
+                        width: 50,
+                        height: 50
+                    },
+                    title: {
+                        type: 'inside'
+                    },
+                    overlay: {
+                        css: {
+                            'background': 'rgba(238,238,238,0.85)'
+                        }
+                    }
+                },
+                wrapCSS: 'fancybox-custom',
+                closeClick: true,
+                openEffect: 'none',
+
+            });
+        });
+    </script>
+}
+
+<!--page_container-->
+<div class="page_container">
+    <div class="breadcrumb">
+        <div class="wrap">
+            <div class="container">
+                <span>婚礼服务/</span>会场布置
+            </div>
+        </div>
+    </div>
+    <!--MAIN CONTENT AREA-->
+    <div class="wrap">
+        <div class="container inner_content">
+            <section>
+                <h2 class="title"><span>Tips</span></h2>
+                <p style="text-indent:2em;">拾光文化传播有限公司旗下的拾光影视用纯艺术的手法创作别具一格的婚礼视频。打破以往走流程，纯记录的呆板摄制方式。拥有数台专业级索尼高清摄像机、全画幅单反、斯塔尼康稳定器、影视滑轨、10米影视摇臂。我们用电影的拍摄、剪辑思路，量身定制属于您的爱情大片。 优秀婚礼摄影跟拍，保底200张照片，精修24张</p>
+            </section>
+            <br />
+            <div class="row">
+                <!-- portfolio_block -->
+                <div class="projects">
+                    <div class="span3 element category01" data-category="category01">
+                        <div class="hover_img">
+                            <a class="fancybox-thumbs" style="" data-fancybox-group="thumb" href="/img/sysx/sysx1_b.jpg" title="">
+                                <img src="/img/sysx/sysx1_b.jpg" alt="" /></a>
+                        </div>
+
+                    </div>
+                    <div class="span3 element category02" data-category="category02">
+                        <div class="hover_img">
+                            <a class="fancybox-thumbs" style="" data-fancybox-group="thumb" href="/img/sysx/sysx2_b.jpg" title="">
+                                <img src="/img/sysx/sysx2_b.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="span3 element category03" data-category="category03">
+                        <div class="hover_img">
+                            <a class="fancybox-thumbs" style="" data-fancybox-group="thumb" href="/img/sysx/sysx3_b.jpg" title="">
+                                <img src="/img/sysx/sysx3_b.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="span3 element category01" data-category="category01">
+                        <div class="hover_img">
+                            <a class="fancybox-thumbs" style="" data-fancybox-group="thumb" href="/img/sysx/sysx4_b.jpg" title="">
+                                <img src="/img/sysx/sysx4_b.jpg" alt="" /></a>
+                            <span class="shadowimg220"></span>
+                        </div>
+                    </div>
+                    <div class="span3 element category01" data-category="category01">
+                        <div class="hover_img">
+                            <a class="fancybox-thumbs" style="" data-fancybox-group="thumb" href="/img/sysx/sysx5_b.jpg" title="">
+                                <img src="/img/sysx/sysx5_b.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="span3 element category01" data-category="category01">
+                        <div class="hover_img">
+                            <a class="fancybox-thumbs" style="" data-fancybox-group="thumb" href="/img/sysx/sysx6_b.jpg" title="">
+                                <img src="/img/sysx/sysx6_b.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="span3 element category01" data-category="category01">
+                        <div class="hover_img">
+                            <a class="fancybox-thumbs" style="" data-fancybox-group="thumb" href="/img/sysx/sysx7_b.jpg" title="">
+                                <img src="/img/sysx/sysx7_b.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--//MAIN CONTENT AREA-->
+
+</div>
+<!--//page_container-->

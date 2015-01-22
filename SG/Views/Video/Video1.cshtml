@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "婚礼集锦";
+}
+@section head{
+    <script type="text/javascript" src="http://player.youku.com/jsapi">
+       function showVideo(domid,vid){
+       player = new YKU.Player(domid,{
+               client_id: 'e02141a1a872eefd',
+               vid: vid,
+               show_related: false
+               });
+       }
+        showVideo('sp1','XODM3MzQ4NzQw');
+            showVideo('sp2','XNzY3NzU0NTU2');
+    </script>
+}
+
+<!--page_container-->
+<div class="page_container">
+    <div class="breadcrumb">
+        <div class="wrap">
+            <div class="container">
+                <a href="index.html">婚礼视频</a><span>/</span>婚礼集锦
+            </div>
+        </div>
+    </div>
+    <!--MAIN CONTENT AREA-->
+    <div class="wrap">
+        <div class="container inner_content">
+            <div class="row">
+                <!-- portfolio_block -->
+                <div class="projects">
+                    <div class="span6 element category01" data-category="category01">
+                        <div id="sp1" style="width:571px;height:285px;">
+                            @*<img src="/img/portfolio/1.jpg" alt="" />*@
+                        </div>
+                        <div class="item_description">
+                            <h6><a href="single_portfolio.html">Lorem ipsum dolor</a></h6>
+                            <div class="descr">Et dicta essent vis, sed vitae dictas vulputate ea, ex zril quaeque mentitum quo.</div>
+                        </div>
+                    </div>
+                    <div class="span6 element category02" data-category="category02">
+                        <div id="sp2" style="width:571px;height:285px;">
+                            <img src="/img/portfolio/2.jpg" alt="" />
+                        </div>
+                        <div class="item_description">
+                            <h6><a href="single_portfolio.html">Pri ridens tibique</a></h6>
+                            <div class="descr">Tota ullum soluta at qui. Et nam malorum deleniti eleifend, ei lorem recusabo vim.</div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!-- //portfolio_block -->
+            </div>
+        </div>
+    </div>
+    <!--//MAIN CONTENT AREA-->
+
+</div>
+<!--//page_container-->
